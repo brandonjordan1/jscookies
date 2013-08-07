@@ -1,7 +1,7 @@
 jscookies
 =========
 
-Easily Create Cookies in JavaScript without having to make your own cookie script.
+Easily Create Cookies in JavaScript without having to make your own cookies script.
 
 
 Usage
