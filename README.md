@@ -7,7 +7,7 @@ Easily create cookies with JavaScript without having to make a custom cookies sc
 Usage
 =========
 
-Simply put this in the webpage you would like to use it on:
+Simply put this in the &lt;head&gt; of your code:
 
 &lt;script type="text/javascript" src="../jscookies.js"&gt;&lt;/script&gt;
 
