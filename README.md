@@ -13,12 +13,18 @@ Simply put this in the &lt;head&gt; of your code:
 
 Get Cookie Value
 =========
-getCookie("username");
+getCookie("name");
 
 Create Cookie & Set Value
 =========
-setCookie("username","user",365);
+setCookie("name","value",365);
+
+<b>name</b> - Name of the cookie
+<br/>
+<b>value</b> - Value of the cookie
+<br/>
+<b>365</b> - Number of days till cookie expires
 
 Delete Cookie
 =========
-eraseCookie("username","user",365);
+eraseCookie("name");
