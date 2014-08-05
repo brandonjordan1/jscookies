@@ -9,7 +9,7 @@ Usage
 
 Simply put this in the webpage you would like to use it on:
 
-[code]&lt;script type="text/javascript" src="../jscookies.js"&gt;&lt;/script&gt;[code]
+&lt;script type="text/javascript" src="../jscookies.js"&gt;&lt;/script&gt;
 
 Get Cookie Value
 =========
