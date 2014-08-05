@@ -1,19 +1,34 @@
-function setCookie(cname,cvalue,exdays)
+function getCookie(c_name)
 {
-var d = new Date();
-d.setTime(d.getTime()+(exdays*24*60*60*1000));
-var expires = "expires="+d.toGMTString();
-document.cookie = cname + "=" + cvalue + "; " + expires;
-}
-
-function getCookie(cname)
+var c_value = document.cookie;
+var c_start = c_value.indexOf(" " + c_name + "=");
+if (c_start == -1)
 {
-var name = cname + "=";
-var ca = document.cookie.split(';');
-for(var i=0; i<ca.length; i++) 
-  {
-  var c = ca[i].trim();
-  if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+c_start = c_value.indexOf(c_name + "=");
 }
-return "";
+if (c_start == -1)
+{
+c_value = null;
+}
+else
+{
+c_start = c_value.indexOf("=", c_start) + 1;
+var c_end = c_value.indexOf(";", c_start);
+if (c_end == -1)
+{
+c_end = c_value.length;
+}
+c_value = unescape(c_value.substring(c_start,c_end));
+}
+return c_value;
+}
+function setCookie(c_name,value,exdays)
+{
+var exdate=new Date();
+exdate.setDate(exdate.getDate() + exdays);
+var c_value=escape(value) + ((exdays===null) ? "" : "; expires="+exdate.toUTCString());
+document.cookie=c_name + "=" + c_value;
+}
+function eraseCookie(name) {
+    document.cookie = name + '=; Max-Age=0';
 }
