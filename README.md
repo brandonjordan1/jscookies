@@ -1,4 +1,4 @@
-jsCookies 2
+jsCookies 2.0
 =========
 
 Easily create cookies with JavaScript without having to make a custom cookies script.
