@@ -1,19 +1,18 @@
-jsCookies 2.0
+jsCookies
 =========
-Easily create cookies with JavaScript without having to make a custom cookies script.
+Quick JS cookies script
 
 Usage
 =========
-Download 'jsCookies.js', and put this in the &lt;head&gt; of your code:
 
-`<script type="text/javascript" src="../jscookies.js"></script>`
+```html
+<script type="text/javascript" src="path/to/jscookies.js"></script>
+```
 
-Get Cookie Value
+Usage
 =========
 `getCookie("name");`
 
-Create Cookie & Set Value
-=========
 `setCookie("name","value",365);`
 
 <table>
@@ -22,6 +21,4 @@ Create Cookie & Set Value
 <tr><td>365</td><td>Number of days till cookie expires</td></tr>
 </table>
 
-Delete Cookie
-=========
 `eraseCookie("name");`
