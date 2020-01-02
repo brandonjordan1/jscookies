@@ -6,7 +6,7 @@ Usage
 =========
 
 ```html
-<script type="text/javascript" src="path/to/jscookies.js"></script>
+<script type="text/javascript" src="path/to/cookies.min.js"></script>
 ```
 
 Usage
